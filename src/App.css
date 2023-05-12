@@ -1,0 +1,67 @@
+body{
+  display: grid;
+  place-content: center;
+
+}
+
+.container{
+  width: 620px;
+  height: 620px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-button{
+  height: 60px;
+  width: 80%;
+}
+
+
+
+.vertical{
+  height: 500px;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.main{
+  width: 500px;
+  position: relative;
+}
+.v-button{
+  width: 60px;
+  height: 100%;
+
+  background-color: blue;
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+
+  background-color: orange;
+  position: absolute;
+  
+}
+
+.button{
+  background-color: aqua;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:disabled{
+  background-color: rgb(29, 172, 172);
+  cursor:no-drop;
+}
+
+.button:hover:not(:disabled){
+  background-color: rgb(42, 224, 224);
+
+}
